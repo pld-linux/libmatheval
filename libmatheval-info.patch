@@ -1,0 +1,14 @@
+--- libmatheval-1.0.0/doc/libmatheval.texi.orig	2003-10-26 14:19:50.000000000 +0100
++++ libmatheval-1.0.0/doc/libmatheval.texi	2003-11-16 02:14:49.953774216 +0100
+@@ -9,6 +9,11 @@
+ @include version.texi
+ @syncodeindex fn cp
+ 
++@dircategory Libraries:
++@direntry
++* libmatheval (libmatheval).		Evaluating mathematical expressions
++@end direntry
++
+ @ifnottex
+ This file documents GNU @code{libmatheval} library.
+ 
