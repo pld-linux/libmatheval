@@ -1,14 +1,15 @@
 Summary:	Library for evaluating mathematical expressions
 Summary(pl):	Biblioteka do obliczania wyra¿eñ matematycznych
 Name:		libmatheval
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.gnu.org/gnu/libmatheval/%{name}-%{version}.tar.gz
-# Source0-md5:	15ddaedde4dc9d4832c6125d7e0cb999
+# Source0-md5:	6ba40aba212629142506f96b7a7dac7f
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/libmatheval/
+BuildRequires:	automake
 BuildRequires:	bison
 BuildRequires:	flex
 BuildRequires:	guile
@@ -38,7 +39,9 @@ Biblioteka udostêpnia interfejsy dla C i Fortranu 77.
 Summary:	Header files for libmatheval library
 Summary(pl):	Pliki nag³ówkowe biblioteki libmatheval
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
+# -lfl
+Requires:	flex
 
 %description devel
 Header files for libmatheval library.
@@ -50,7 +53,7 @@ Pliki nag³ówkowe biblioteki libmatheval.
 Summary:	Static libmatheval library
 Summary(pl):	Statyczna biblioteka libmatheval
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libmatheval library.
@@ -63,6 +66,7 @@ Statyczna biblioteka libmatheval.
 %patch0 -p1
 
 %build
+cp -f /usr/share/automake/config.* config
 %configure
 %{__make}
 
