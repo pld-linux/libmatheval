@@ -1,5 +1,5 @@
 Summary:	Library for evaluating mathematical expressions
-Summary(pl):	Biblioteka do obliczania wyra¿eñ matematycznych
+Summary(pl.UTF-8):   Biblioteka do obliczania wyraÅ¼eÅ„ matematycznych
 Name:		libmatheval
 Version:	1.1.3
 Release:	2
@@ -26,18 +26,18 @@ function derivative over a specified variable, or to write a textual
 tree representation to a specified string. The library exposes C and
 Fortran 77 interfaces.
 
-%description -l pl
-GNU libmatheval to biblioteka zawieraj±ca ró¿ne procedury
-umo¿liwiaj±ce tworzenie w pamiêci drzew ze znakowej reprezentacji
-funkcji matematycznych jednej lub wielu zmiennych. Drzewo mo¿e byæ
-pó¼niej u¿yte do obliczenia warto¶ci funkcji dla podanych warto¶ci
-parametrów, stworzenia drzewa dla pochodnej funkcji po danej zmiennej
-lub zapisania tekstowej reprezentacji drzewa do podanego ³añcucha.
-Biblioteka udostêpnia interfejsy dla C i Fortranu 77.
+%description -l pl.UTF-8
+GNU libmatheval to biblioteka zawierajÄ…ca rÃ³Å¼ne procedury
+umoÅ¼liwiajÄ…ce tworzenie w pamiÄ™ci drzew ze znakowej reprezentacji
+funkcji matematycznych jednej lub wielu zmiennych. Drzewo moÅ¼e byÄ‡
+pÃ³Åºniej uÅ¼yte do obliczenia wartoÅ›ci funkcji dla podanych wartoÅ›ci
+parametrÃ³w, stworzenia drzewa dla pochodnej funkcji po danej zmiennej
+lub zapisania tekstowej reprezentacji drzewa do podanego Å‚aÅ„cucha.
+Biblioteka udostÄ™pnia interfejsy dla C i Fortranu 77.
 
 %package devel
 Summary:	Header files for libmatheval library
-Summary(pl):	Pliki nag³ówkowe biblioteki libmatheval
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libmatheval
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 # -lfl
@@ -46,19 +46,19 @@ Requires:	flex
 %description devel
 Header files for libmatheval library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki libmatheval.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki libmatheval.
 
 %package static
 Summary:	Static libmatheval library
-Summary(pl):	Statyczna biblioteka libmatheval
+Summary(pl.UTF-8):   Statyczna biblioteka libmatheval
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libmatheval library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libmatheval.
 
 %prep
