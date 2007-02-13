@@ -1,5 +1,5 @@
 Summary:	Library for evaluating mathematical expressions
-Summary(pl.UTF-8):   Biblioteka do obliczania wyrażeń matematycznych
+Summary(pl.UTF-8):	Biblioteka do obliczania wyrażeń matematycznych
 Name:		libmatheval
 Version:	1.1.3
 Release:	2
@@ -37,7 +37,7 @@ Biblioteka udostępnia interfejsy dla C i Fortranu 77.
 
 %package devel
 Summary:	Header files for libmatheval library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libmatheval
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libmatheval
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 # -lfl
@@ -51,7 +51,7 @@ Pliki nagłówkowe biblioteki libmatheval.
 
 %package static
 Summary:	Static libmatheval library
-Summary(pl.UTF-8):   Statyczna biblioteka libmatheval
+Summary(pl.UTF-8):	Statyczna biblioteka libmatheval
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
