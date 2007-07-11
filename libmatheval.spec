@@ -1,12 +1,12 @@
 Summary:	Library for evaluating mathematical expressions
 Summary(pl.UTF-8):	Biblioteka do obliczania wyrażeń matematycznych
 Name:		libmatheval
-Version:	1.1.4
+Version:	1.1.5
 Release:	1
-License:	GPL
+License:	GPL v3+
 Group:		Libraries
 Source0:	ftp://ftp.gnu.org/gnu/libmatheval/%{name}-%{version}.tar.gz
-# Source0-md5:	84f4633b128fdbc4ee3984e3413ab295
+# Source0-md5:	0534e1c5e4730fe60244bd3aa2d46ce2
 Patch0:		%{name}-info.patch
 URL:		http://www.gnu.org/software/libmatheval/
 BuildRequires:	automake
