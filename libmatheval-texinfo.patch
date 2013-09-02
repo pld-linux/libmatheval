@@ -1,0 +1,19 @@
+--- libmatheval-1.1.11/doc/libmatheval.texi.orig	2013-09-01 21:26:09.463898529 +0200
++++ libmatheval-1.1.11/doc/libmatheval.texi	2013-09-01 21:26:22.833897967 +0200
+@@ -34,11 +34,11 @@
+ @end ifnottex
+ 
+ @titlepage
+-@title{GNU @code{libmatheval} manual}
+-@subtitle{Manual edition @value{EDITION}}
+-@subtitle{For GNU @code{libmatheval} version @value{VERSION}}
+-@subtitle{Last updated @value{UPDATED}}
+-@author{Aleksandar Samardzic}
++@title GNU @code{libmatheval} manual
++@subtitle Manual edition @value{EDITION}
++@subtitle For GNU @code{libmatheval} version @value{VERSION}
++@subtitle Last updated @value{UPDATED}
++@author Aleksandar Samardzic
+ 
+ @page
+ @vskip 0pt plus 1filll
