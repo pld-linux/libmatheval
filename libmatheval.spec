@@ -16,7 +16,7 @@ BuildRequires:	automake
 BuildRequires:	bison
 BuildRequires:	flex >= 2.5.33-2
 # for config.rpath
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	guile-devel
 BuildRequires:	libtool
 BuildRequires:	texinfo
