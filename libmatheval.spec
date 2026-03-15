@@ -2,14 +2,13 @@ Summary:	Library for evaluating mathematical expressions
 Summary(pl.UTF-8):	Biblioteka do obliczania wyrażeń matematycznych
 Name:		libmatheval
 Version:	1.1.11
-Release:	2
+Release:	3
 License:	GPL v3+
 Group:		Libraries
 Source0:	http://ftp.gnu.org/gnu/libmatheval/%{name}-%{version}.tar.gz
 # Source0-md5:	595420ea60f6ddd75623847f46ca45c4
-Patch0:		%{name}-info.patch
-Patch1:		%{name}-guile2.patch
-Patch2:		%{name}-texinfo.patch
+Patch0:		%{name}-guile3.patch
+Patch1:		%{name}-texinfo.patch
 URL:		http://www.gnu.org/software/libmatheval/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
@@ -71,12 +70,11 @@ Statyczna biblioteka libmatheval.
 %setup -q
 %patch -P0 -p1
 %patch -P1 -p1
-%patch -P2 -p1
 
 %build
-cp -f /usr/share/gettext/config.rpath config
+cp -f %{_datadir}/gettext/config.rpath config
 %{__libtoolize}
-%{__aclocal}
+%{__aclocal} -I %{_datadir}/gettext/m4
 %{__autoconf}
 %{__autoheader}
 %{__automake}
